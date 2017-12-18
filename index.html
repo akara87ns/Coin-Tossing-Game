@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Coin tossing game</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+
+    <div class="container">
+        <section class="textDescription">
+            <div id="introText">
+                <h1>Try to beat the computer at a coin tossing game.</h1>
+            </div>
+
+            <div id="winningText">
+                <h2>Congratulations!!!</h2>
+                <p>You won!</p>
+            </div>
+
+            <div id="losingText">
+                <h2>Sorry :(</h2>
+                <p>You lost. Try again?</p>
+            </div>
+            <div id="tieText">
+                <h2>Tough match.</h2>
+                <p>It's a tie, but you can always try again.</p>
+            </div>
+        </section>
+
+        <section class="score">
+            <h2>Score</h2>
+            <div>
+                <h3>Player:</h3>
+                <h3 id="playerScore">0</h3>
+            </div>
+            <div>
+                <h3>Computer:</h3>
+                <h3 id="computerScore">0</h3>
+            </div>
+        </section>
+
+        <section class="coin">
+            <div class="coinSide">
+                <img id="headsImg" src="images/heads.png">
+                <img id="tailsImg" src="images/tails.png">
+            </div>
+        </section>
+
+        <section class="guessSection">
+            <div>
+                <h3>Your guess:</h3>
+                <h3 id="guessPlayer"></h3>
+            </div>
+            <div>
+                <h3>Computer's guess:</h3>
+                <h3 id="guessComputer"></h3>
+            </div>
+        </section>
+
+        <section class="choice">
+            <div class="buttons">
+                <button id="heads">Heads</button>
+                <button id="tails">Tails</button>
+                <button id="reset">Reset</button>
+            </div>
+        </section>
+    </div>
+
+    <script type="text/javascript" src="script.js"></script>
+</body>
+</html>

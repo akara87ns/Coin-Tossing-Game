@@ -1,0 +1,143 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1, h2, h3, p {
+    margin: 0;
+}
+
+h1, h2, h3 {
+    text-shadow: 2px 2px #cbcbb3;
+}
+
+.container {
+    width: 80%;
+    height: 100vh;
+    margin: 0 auto;
+    background: #f5f5f0;
+    box-shadow: 0 8px 8px #b8b894;
+}
+
+.textDescription {
+    height: 25%;
+    position: relative;
+}
+
+.textDescription div{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#winningText, #losingText, #tieText {
+    display: none;
+}
+
+.score {
+    height: 18%;
+    border-top: 2px solid #a2a276;
+    /*border-bottom: 1px solid #a2a276;*/
+    padding-top: 1em;
+}
+
+.score div {
+    display: inline-block;
+    width: 49.3%;
+}
+
+.score h2 {
+    font-size: 2.5em;
+}
+
+.score h3 {
+    font-size: 1.5em;
+}
+
+.coin {
+    height: 32%;
+}
+
+.coinSide {
+    height: 100%;
+    width: 100%;
+}
+
+img {
+    display: inline-block;
+    height: 94%;
+}
+
+#headsImg, #tailsImg {
+    display: none;
+}
+
+.guessSection {
+    border-bottom: 2px solid #a2a276;
+    height: 10%;
+}
+
+.guessSection div {
+    display: inline-block;
+    width: 49.3%;
+}
+
+.choice {
+    height: 12.5%;
+    position: relative;
+}
+
+.buttons {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+button {
+    padding: .8em 2em;
+    background: #acac86;
+    color: #3d3d29;
+    border: none;
+    border-radius: 10px;
+    transition: .3s;
+    text-transform: uppercase;
+    margin-right: 1em;
+    text-align: center;
+}
+
+button:hover {
+    background: #7a7a52;
+    color: #f5f5f0;
+    box-shadow: 0 5px 5px #b8b894;
+}
+
+#reset {
+    display: none;
+}
+
+@media (max-width: 1000px) {
+    .container {
+        width: 100%;
+    }
+}
+
+@media (max-width: 500px) {
+    button {
+        margin-right: 0;
+    }
+}
+
+@media (max-width: 420px) {
+    body {
+        font-size: .9em;
+    }
+    button {
+        padding: .8em 2em;
+        width: 48%;
+    }
+}
