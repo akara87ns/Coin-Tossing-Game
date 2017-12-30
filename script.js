@@ -1,7 +1,4 @@
 var introText = document.getElementById("introText");
-var winningText = document.getElementById("winningText");
-var losingText = document.getElementById("losingText");
-var tieText = document.getElementById("tieText");
 
 var scorePlayer = document.getElementById("playerScore");
 var scoreComputer = document.getElementById("computerScore");
@@ -21,7 +18,7 @@ var scoreCounterPlayer = 0;
 var scoreCounterComputer = 0;
 var counter = 0;
 
-
+//Get random number between 0 and 1
 function getRandom() {
     var randomNum = Math.round(Math.random());
     return randomNum;
@@ -74,16 +71,15 @@ counter++;
 
 //Game end
     if (counter === 10) {
-        introText.style.display = "none";
         headsButton.style.display = "none";
         tailsButton.style.display = "none";
         resetButton.style.display = "block";
         if (scoreCounterPlayer > scoreCounterComputer) {
-            winningText.style.display = "block";
+            introText.innerHTML = "<h2>Congratulations!!!</h2> <p>You won!</p>";
         } else if (scoreCounterPlayer < scoreCounterComputer) {
-            losingText.style.display = "block";
+            introText.innerHTML = "<h2>Sorry :(</h2> <p>You lost. Try again?</p>";
         } else if (scoreCounterPlayer == scoreCounterComputer) {
-            tieText.style.display = "block";
+            introText.innerHTML = "<h2>Tough match.</h2> <p>It's a tie, but you can always try again.</p>";
         }
     }
 

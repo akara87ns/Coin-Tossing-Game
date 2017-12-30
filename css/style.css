@@ -34,14 +34,9 @@ h1, h2, h3 {
     transform: translate(-50%, -50%);
 }
 
-#winningText, #losingText, #tieText {
-    display: none;
-}
-
 .score {
     height: 18%;
     border-top: 2px solid #a2a276;
-    /*border-bottom: 1px solid #a2a276;*/
     padding-top: 1em;
 }
 
